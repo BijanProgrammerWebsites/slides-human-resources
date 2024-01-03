@@ -50,6 +50,53 @@ html,
     }
 }
 
+.reveal table th,
+.reveal table td {
+    text-align: start;
+}
+
+.reveal ul,
+.reveal ol {
+    margin: 0;
+    margin-inline-start: 1em;
+}
+
+.reveal table ol {
+    margin: 0;
+}
+
+.reveal blockquote {
+    box-shadow: none;
+
+    padding: 0;
+
+    font-size: 1.2em;
+
+    &::before,
+    &::after {
+        opacity: 0.2;
+
+        position: absolute;
+
+        font-family: fantasy;
+        font-size: 4em;
+    }
+
+    &::before {
+        content: open-quote;
+
+        inset-block-start: -4rem;
+        inset-inline-end: -2rem;
+    }
+
+    &::after {
+        content: close-quote;
+
+        inset-block-end: -7rem;
+        inset-inline-start: 0;
+    }
+}
+
 img.icon {
     width: auto;
     height: 2em;
@@ -82,6 +129,12 @@ ul {
 
             margin-inline-end: 0.5rem;
         }
+    }
+}
+
+ol {
+    li {
+        margin-block-end: 1rem;
     }
 }
 

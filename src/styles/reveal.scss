@@ -21,6 +21,8 @@
                     align-items: center;
                     gap: 1rem;
 
+                    width: inherit;
+
                     text-align: start;
 
                     &:has(.second) {
