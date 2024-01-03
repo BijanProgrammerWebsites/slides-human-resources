@@ -1,0 +1,21 @@
+{
+    "name": "human-resources",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build --base=/hr/",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@types/reveal.js": "^4.4.8",
+        "prettier": "^3.1.0",
+        "sass": "^1.69.5",
+        "typescript": "^5.2.2",
+        "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "reveal.js": "^5.0.2"
+    }
+}
