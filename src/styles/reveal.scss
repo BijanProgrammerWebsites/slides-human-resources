@@ -16,40 +16,49 @@
 
                 .side-by-side {
                     display: grid;
-                    grid-template-columns: 1fr 1fr;
+                    grid-template-columns: 1fr 2fr;
                     grid-template-rows: minmax(0, 1fr);
                     align-items: center;
                     gap: 1rem;
 
                     text-align: start;
 
+                    &:has(.second) {
+                        grid-template-columns: 2fr 1fr;
+                    }
+
                     img {
                         margin: auto;
 
                         &.medium {
-                            max-width: 70%;
-                            max-height: 70%;
+                            max-width: 90%;
+                            //max-height: 70%;
+                        }
+
+                        &.second {
+                            order: 2;
                         }
                     }
+                }
+
+                .regular {
+                    text-align: start;
                 }
 
                 .table-of-content {
                     list-style: none;
 
-                    display: flex;
-                    flex-wrap: wrap;
+                    display: grid;
                     gap: 4rem;
 
                     text-align: center;
 
                     li {
-                        flex: 1 0 auto;
-
                         position: relative;
 
                         background-color: var(--color-container);
 
-                        padding: 1rem;
+                        padding: 1rem 8rem;
 
                         border-radius: var(--border-radius);
 

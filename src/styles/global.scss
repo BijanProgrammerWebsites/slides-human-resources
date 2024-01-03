@@ -1,17 +1,26 @@
 :root {
+    --r-background-color: hsl(120, 30%, 98%);
+    --r-main-color: hsl(120, 30%, 10%, 0.7);
+
     --r-main-font: "Vazirmatn", sans-serif;
+    --r-main-font-size: 1.5rem;
+
+    --r-heading-color: hsl(120, 30%, 10%);
     --r-heading-font: "Vazirmatn", sans-serif;
     --r-heading1-size: 2em;
     --r-heading2-size: 1.8em;
     --r-heading3-size: 1.4em;
     --r-heading-font-weight: 700;
     --r-heading4-size: 0.7em;
-    --r-main-font-size: 1.5rem;
-    --r-link-color: hsl(70, 40%, 50%);
-    --r-link-color-hover: hsl(70, 40%, 40%);
 
-    --color-container: hsl(70, 18%, 85%);
-    --color-container-index: hsl(70, 24%, 60%);
+    --r-link-color: hsl(120, 30%, 50%);
+    --r-link-color-hover: hsl(120, 30%, 40%);
+
+    --r-selection-background-color: hsl(120, 30%, 50%);
+    --r-selection-color: hsl(120, 30%, 98%);
+
+    --color-container: hsl(120, 30%, 90%);
+    --color-container-index: hsl(120, 30%, 60%);
 
     --border-radius: 0.4rem;
 }
@@ -31,6 +40,16 @@ html,
     font-family: "Vazirmatn", sans-serif;
 }
 
+.reveal .slide-number {
+    background-color: transparent;
+
+    font-size: 1rem;
+
+    .slide-number-a {
+        color: var(--r-main-color);
+    }
+}
+
 img.icon {
     width: auto;
     height: 2em;
@@ -39,6 +58,8 @@ img.icon {
 }
 
 ul {
+    padding: 0;
+
     li {
         list-style: none;
 
@@ -67,4 +88,10 @@ ul {
 .qr-code {
     width: 16rem;
     height: 16rem;
+}
+
+.icon {
+    &.reverse {
+        transform: scaleX(-1);
+    }
 }
